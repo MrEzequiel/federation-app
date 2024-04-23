@@ -1,13 +1,12 @@
 {
-  "name": "typescript-project-references",
-  "description": "This example demos a basic host/remote application with TypeScript using [Project References](https://www.typescriptlang.org/docs/handbook/project-references.html).",
+  "name": "federation-app",
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "start": "pnpm --filter typescript-project-references_app* --parallel start",
-    "build": "pnpm --filter typescript-project-references_app* build",
-    "serve": "pnpm --filter typescript-project-references_app* --parallel serve",
-    "clean": "pnpm --filter typescript-project-references_app* --parallel clean",
+    "start": "pnpm --parallel start",
+    "build": "pnpm build",
+    "serve": "pnpm --parallel serve",
+    "clean": "pnpm --parallel clean",
     "e2e:ci": "pnpm start & wait-on http-get://localhost:3001/ && npx cypress run --config-file ../cypress-e2e/config/cypress.config.ts --config '{\"supportFile\": \"../cypress-e2e/support/e2e.ts\"}' --spec \"./e2e/tests/*.cy.ts\" --browser=chrome"
   },
   "devDependencies": {
