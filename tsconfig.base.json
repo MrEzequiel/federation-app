@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "strict": true,
+    "jsx": "react",
+    "composite": true,
+    "paths": {
+      "remote/*": ["./remote/src/*"]
+    },
+    "module": "commonjs",
+    "target": "ESNext"
+  },
+  "files": []
+}
